@@ -1,5 +1,11 @@
-function test(valueA, valueB = 4) {
-    return valueA + valueB;
-}
+var list = [
+    "test", 
+    34,
+    {
+        name: "Cairo"
+    }
+];
 
-console.log(test(4));
+for(var i of list) {
+    console.log(i);
+}
