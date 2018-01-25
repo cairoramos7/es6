@@ -1,35 +1,17 @@
-/*
-var bob = {
-    _name: "Bob",
-    _friends: [
-        "Cairo", 
-        "Gracyelle"
-    ],
-    printFriends: function printFriends() {
-        this._friends.forEach(function(f) {
-            return console.log(this._name + " knows " + f);
-        });
-    }
-};
+class Color {
+    constructor(codeColor, nameColor) {
+        this.codeColor = codeColor;
+        this.nameColor = nameColor;
+    };
 
-bob.printFriends();
+    getColor() {
+        return {
+            codeColor: this.codeColor,
+            nameColor: this.nameColor
+        }
+    };
+}
 
 
-var color = () => console.log("red");
-
-color();
-
-*/
-
-var bob = {
-    _name: "Bob",
-    _friends: [
-        "Cairo", 
-        "Gracyelle"
-    ],
-    printFriends: function printFriends() {
-        this._friends.forEach(f => console.log(this._name +" knows "+ f));
-    }
-};
-
-bob.printFriends();
+let red = new Color("red", "Red");
+console.log(red.getColor());
