@@ -1,7 +1,9 @@
 "use strict";
 
-var name = "Cairo";
-var age = 21;
-var text = "\n    name: " + name + "\n    age: " + age + "\n";
+function test(valueA) {
+    var valueB = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 4;
 
-console.log(text);
+    return valueA + valueB;
+}
+
+console.log(test(4));
